@@ -1,4 +1,6 @@
 const repeatString = function() {
+const repeat = "hey";
+return repeat.repeat(3)
 
 };
 
