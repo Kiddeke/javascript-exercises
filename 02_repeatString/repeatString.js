@@ -1,8 +1,9 @@
 const repeatString = function(string, num) {
-    for (let i = 0; i < num + 1; i++) {
-        return string
+    word = "";
+    for (let i = 0; i < num; i++){
+        word += string; 
     }
-return repeatString("hey", 3)
+return word;
 
 };
 
