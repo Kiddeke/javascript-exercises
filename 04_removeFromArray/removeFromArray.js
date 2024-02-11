@@ -1,7 +1,12 @@
-const removeFromArray = function(x, value ) {
-    const valueLocation = x.indexOf(value);
-    x.splice(valueLocation, 1);
-  return x;
+const removeFromArray = function(x, ...args) {
+  const result = [];
+  x.forEach((element) => {
+      if (args.includes(element) == false) {
+      result.push(element);
+      }
+  }) 
+  
+  return result;
   };
 
 // Do not edit below this line
